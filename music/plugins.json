@@ -1,0 +1,8 @@
+{"plugins":
+[
+{"name":"网易云","url":"https://gh-proxy.com/https://raw.githubusercontent.com/rxsweet/MusicFreePlugins/master/dist/netease/index.js","version":"0.1.1"},
+{"name":"QQ","url":"https://gh-proxy.com/https://raw.githubusercontent.com/rxsweet/MusicFreePlugins/master/dist/qq/index.js","version":"0.1.1"},
+{"name":"酷我","url":"https://gh-proxy.com/https://raw.githubusercontent.com/rxsweet/MusicFreePlugins/master/dist/kuwo/index.js","version":"0.1.0"},
+{"name":"酷狗","url":"https://gh-proxy.com/https://raw.githubusercontent.com/rxsweet/MusicFreePlugins/master/dist/kugou/index.js","version":"0.1.0"}
+]
+}

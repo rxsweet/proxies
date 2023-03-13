@@ -1,0 +1,19 @@
+name: Delete Commit Records Weekly
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Delete commit records
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Action"
+        git checkout --orphan new_branch
+        git commit -m "init"
+        git branch -D main
+        git branch -m main
+        git push -f origin main 

@@ -1,0 +1,30 @@
+{
+"urls":[
+//{"url":"","name":"请点击下方线路观看"},
+
+{
+"url":"https://download.kstore.space/download/2883/m3u8/dsj/guochan/mp1/1.m3u8",
+"name":"持续维护-蚂蚁论坛-D大-18"
+},
+{
+"url":"https://ghproxy.com/https://raw.githubusercontent.com/zhanghong1983/TVBOXZY/main/18.json",
+"name":"持续维护-张弘-18"
+},
+{
+"url":"https://gitlab.com/ygbh1/666/-/raw/main/PRO.json",
+"name":"持续维护-月光宝盒PRO-18"
+},
+{
+"url":"https://ghproxy.com/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/json/adult.json",
+"name":"持续维护-github/FongMi - adult"
+},
+{
+"url":"https://ghproxy.com/https://raw.githubusercontent.com/shiran588/TVBox/main/maotv3.txt",
+"name":"持续维护-github/shiran588-maotv3"
+},
+{
+"url":"https://ghproxy.com/https://raw.githubusercontent.com/shiran588/TVBox/main/cr.json",
+"name":"持续维护-github/shiran588 -cr"
+}
+]
+}
