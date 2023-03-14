@@ -5,20 +5,18 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 US 1, server: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 2, server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}, udp: true}
+  - {name: 🇭🇰 HK 2, server: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: 🇺🇸 US 3, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: 🇺🇸 US 4, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: 🇺🇸 US 5, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
+  - {name: 🇺🇸 US 4, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
 proxy-groups:
   - name: 手动切换
     type: select
     proxies:
       - 🇺🇸 US 1
-      - 🇺🇸 US 2
+      - 🇭🇰 HK 2
       - 🇺🇸 US 3
       - 🇺🇸 US 4
-      - 🇺🇸 US 5
   - name: 自动选择
     type: url-test
     url: https://www.google.com/favicon.ico
@@ -26,10 +24,9 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1
-      - 🇺🇸 US 2
+      - 🇭🇰 HK 2
       - 🇺🇸 US 3
       - 🇺🇸 US 4
-      - 🇺🇸 US 5
   - name: 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -38,14 +35,13 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1
-      - 🇺🇸 US 2
+      - 🇭🇰 HK 2
       - 🇺🇸 US 3
       - 🇺🇸 US 4
-      - 🇺🇸 US 5
   - name: 中国节点
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 HK 2
   - name: 日本节点
     type: select
     proxies:
@@ -61,9 +57,7 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 🇺🇸 US 1
-      - 🇺🇸 US 2
       - 🇺🇸 US 3
       - 🇺🇸 US 4
-      - 🇺🇸 US 5
 rules:
  - MATCH,手动切换
