@@ -5,38 +5,44 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 US 1, server: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP 2, server: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 1, server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
   - {name: 🇰🇷 KR 3, server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG 4, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US 5, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: uk1.scproxy.top}}, udp: true}
-  - {name: 🇺🇸 US 6, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
-  - {name: 🇺🇸 US 7, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: waw.cloudflare.quest}}, udp: true}
-  - {name: 🇭🇰 HK 8, server: hk2.vpnjantit.com, port: 10001, type: vmess, uuid: a2117fce-c094-11ed-b942-00163e089db5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: hk2.vpnjantit.com}}, udp: true}
-  - {name: 🇭🇰 HK 9, server: hk3.vpnjantit.com, port: 10001, type: vmess, uuid: 0c063fdc-c095-11ed-9e0e-00163e08689e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: hk3.vpnjantit.com}}, udp: true}
-  - {name: 🇺🇸 US 10, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: vn.cloudflare.quest}}, udp: true}
-  - {name: 🇲🇾 MY 11, server: my2.vpnjantit.com, port: 10000, type: vmess, uuid: 7d0c57d8-c096-11ed-b629-00163e005b89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: my2.vpnjantit.com}}, udp: true}
-  - {name: 🇯🇵 JP 12, server: 132.226.5.189, port: 26369, type: vmess, uuid: f5934f6a-6a07-4c7c-bb0f-3af328ea6897, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR 13, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.67.218.216}}, udp: true}
-  - {name: 🇯🇵 JP 14, server: 152.69.206.73, port: 12794, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.69.206.73}}, udp: true}
+  - {name: 🇺🇸 US 4, server: no.aries.ovh, port: 2052, type: vmess, uuid: babd8354-a625-4868-92d1-b50dba51aa5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: buyvm.cloudflare.quest}}, udp: true}
+  - {name: 🇺🇸 US 5, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk-hytron.ilovescp.com}}, udp: true}
+  - {name: 🇺🇸 US 6, server: 172.64.204.26, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}, udp: true}
+  - {name: 🇺🇸 US 7, server: 172.64.132.63, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}, udp: true}
+  - {name: 🇺🇸 US 8, server: 172.64.201.189, port: 2095, type: vmess, uuid: dfe8fe9d-7f04-4664-eb44-708aa6e82446, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg:@hkaa0, headers: {Host: r.hkaa0.tk}}, udp: true}
+  - {name: 🇲🇾 MY 9, server: my2.vpnjantit.com, port: 10000, type: vmess, uuid: 7d0c57d8-c096-11ed-b629-00163e005b89, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vpnjantit, headers: {Host: my2.vpnjantit.com}}, udp: true}
+  - {name: 🇺🇸 US 10, server: 25.v2-ray.cyou, port: 23625, type: vmess, uuid: 0dd19d20-ec86-3680-b256-87237bafa89e, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: 25.v2-ray.cyou}}, udp: true}
+  - {name: 🇯🇵 JP 11, server: 132.226.5.189, port: 26369, type: vmess, uuid: f5934f6a-6a07-4c7c-bb0f-3af328ea6897, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR 12, server: 152.67.218.216, port: 17992, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.67.218.216}}, udp: true}
+  - {name: 🇯🇵 JP 13, server: 152.69.206.73, port: 12794, type: vmess, uuid: 52768552-c2b2-4460-89f1-e740cc145b99, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /ws-path, headers: {Host: 152.69.206.73}}, udp: true}
+  - {name: 🇺🇸 US 14, server: ny1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}, udp: true}
+  - {name: BZ 15, server: 203.30.191.19, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 🇺🇸 US 16, server: 172.64.153.158, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
+  - {name: 🇺🇸 US 17, server: 172.64.153.155, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}, udp: true}
 proxy-groups:
   - name: 手动切换
     type: select
     proxies:
       - 🇺🇸 US 1
-      - 🇯🇵 JP 2
+      - 🇺🇸 US 2
       - 🇰🇷 KR 3
-      - 🇸🇬 SG 4
+      - 🇺🇸 US 4
       - 🇺🇸 US 5
       - 🇺🇸 US 6
       - 🇺🇸 US 7
-      - 🇭🇰 HK 8
-      - 🇭🇰 HK 9
+      - 🇺🇸 US 8
+      - 🇲🇾 MY 9
       - 🇺🇸 US 10
-      - 🇲🇾 MY 11
-      - 🇯🇵 JP 12
-      - 🇰🇷 KR 13
-      - 🇯🇵 JP 14
+      - 🇯🇵 JP 11
+      - 🇰🇷 KR 12
+      - 🇯🇵 JP 13
+      - 🇺🇸 US 14
+      - BZ 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
   - name: 自动选择
     type: url-test
     url: https://www.google.com/favicon.ico
@@ -44,19 +50,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1
-      - 🇯🇵 JP 2
+      - 🇺🇸 US 2
       - 🇰🇷 KR 3
-      - 🇸🇬 SG 4
+      - 🇺🇸 US 4
       - 🇺🇸 US 5
       - 🇺🇸 US 6
       - 🇺🇸 US 7
-      - 🇭🇰 HK 8
-      - 🇭🇰 HK 9
+      - 🇺🇸 US 8
+      - 🇲🇾 MY 9
       - 🇺🇸 US 10
-      - 🇲🇾 MY 11
-      - 🇯🇵 JP 12
-      - 🇰🇷 KR 13
-      - 🇯🇵 JP 14
+      - 🇯🇵 JP 11
+      - 🇰🇷 KR 12
+      - 🇯🇵 JP 13
+      - 🇺🇸 US 14
+      - BZ 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
   - name: 负载均衡
     type: load-balance
     strategy: consistent-hashing
@@ -65,34 +74,35 @@ proxy-groups:
     tolerance: 50
     proxies:
       - 🇺🇸 US 1
-      - 🇯🇵 JP 2
+      - 🇺🇸 US 2
       - 🇰🇷 KR 3
-      - 🇸🇬 SG 4
+      - 🇺🇸 US 4
       - 🇺🇸 US 5
       - 🇺🇸 US 6
       - 🇺🇸 US 7
-      - 🇭🇰 HK 8
-      - 🇭🇰 HK 9
+      - 🇺🇸 US 8
+      - 🇲🇾 MY 9
       - 🇺🇸 US 10
-      - 🇲🇾 MY 11
-      - 🇯🇵 JP 12
-      - 🇰🇷 KR 13
-      - 🇯🇵 JP 14
+      - 🇯🇵 JP 11
+      - 🇰🇷 KR 12
+      - 🇯🇵 JP 13
+      - 🇺🇸 US 14
+      - BZ 15
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
   - name: 中国节点
     type: select
     proxies:
-      - 🇭🇰 HK 8
-      - 🇭🇰 HK 9
+      - DIRECT
   - name: 日本节点
     type: select
     proxies:
-      - 🇯🇵 JP 2
-      - 🇯🇵 JP 12
-      - 🇯🇵 JP 14
+      - 🇯🇵 JP 11
+      - 🇯🇵 JP 13
   - name: 新加坡节点
     type: select
     proxies:
-      - 🇸🇬 SG 4
+      - DIRECT
   - name: 美国节点
     type: url-test
     url: https://www.google.com/favicon.ico
@@ -100,9 +110,15 @@ proxy-groups:
     tolerance: 150
     proxies:
       - 🇺🇸 US 1
+      - 🇺🇸 US 2
+      - 🇺🇸 US 4
       - 🇺🇸 US 5
       - 🇺🇸 US 6
       - 🇺🇸 US 7
+      - 🇺🇸 US 8
       - 🇺🇸 US 10
+      - 🇺🇸 US 14
+      - 🇺🇸 US 16
+      - 🇺🇸 US 17
 rules:
  - MATCH,手动切换
